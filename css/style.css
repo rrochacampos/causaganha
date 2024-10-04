@@ -1,0 +1,222 @@
+/*#region Global*/
+:root {
+  --azul: #2980b9;
+  --azul-medio: #0969a8;
+  --azul-escuro: #2c3e50;
+  --cinza-claro: #E9ECEF;
+  --cinza-escuro: #34495e;
+  --branco: #ffffff;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, p, a {
+  color: var(--azul-escuro);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+/*#endregion Global*/
+
+/*#region Navbar */
+.navbar {
+    background-color: var(--azul-escuro);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--cinza-claro);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28236,240,241,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+  border-color: var(--cinza-claro);
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  color: var(--cinza-claro);
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: var(--cinza-claro);
+}
+/*#endregion Navbar */
+
+/*#region Hero Section */
+.hero {
+    position: relative;
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+
+  .hero .container * {
+    color: #fff;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+  
+  @media (max-width: 576px) {
+    .hero {
+      background-position: top;
+      background-position-x: 45%;
+      min-height: 70vh;
+    }
+  }
+/*#endregion Hero Section */
+
+/*#region Áreas*/
+#nossosServicos, #nossaHistoria {
+  background-color: var(--branco);
+  }
+  
+  #depoimentos, #formularioContato {
+      background-color: var(--cinza-claro);
+  }
+
+  #nossaHistoria p{
+    text-align: left;
+  }
+/*#endregion Áreas*/
+
+/*#region Card Carousel*/
+.card-depoimento {
+    width: 100%;
+    max-width: 800px;
+    min-height: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .foto-depoimento {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .texto-depoimento {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .nome-depoimento {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 767.98px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card-depoimento {
+      flex-direction: row;
+    }
+  
+    .foto-depoimento {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  
+    .texto-depoimento {
+      text-align: left;
+    }
+  
+    .nome-depoimento {
+      text-align: left;
+    }
+  }
+/*#endregion Card Carousel */
+
+/*#region Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--cinza-claro);
+}
+
+footer a, footer p {
+    color: var(--cinza-claro);
+}
+
+footer a:hover {
+    color: var(--azul);
+}
+/*#endregion Rodapé */
+
+/*#region Botões */
+.btn, .hero .btn  {
+    background-color: var(--azul-medio);
+    color: var(--branco);
+}
+
+.btn:hover, .hero .btn:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+/*#endregion Botões */
+
+/*#region Lista*/
+.ul-servicos {
+    padding: 0;
+}
+
+.ul-servicos li {
+    font-size: 18px;
+    padding: 16px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 8px;
+    background-color: #FFFFFF;
+}
+
+.ul-servicos li:before {
+    content: '✔';
+    margin-right: 10px;
+    color: #FFD700;
+}
+/*#endregion Lista*/
