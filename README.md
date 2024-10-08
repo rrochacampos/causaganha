@@ -12,4 +12,4 @@ Todos os conteúdos apresentados na página (nome do escritório, história, ser
 
 ### Acesse a página
 
-Para visualizar a página em desenvolvimento, [clique aqui](https://rrochacampos.github.io/causaganha/).
+Para visualizar a página em desenvolvimento, [clique aqui](https://rrochacampos.github.io/causaganha/){:target="_blank"}.
